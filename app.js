@@ -25,7 +25,7 @@ app.post("/chat", async (req, res) => {
             {
                 headers: {
                     Authorization: `Bearer ${process.env.chat_bot_key}`,
-                    "HTTP-Referer": "http://localhost:3000",
+                    "HTTP-Referer": process.env.REFERER_URL || "http://localhost:3000",
                     "Content-Type": "application/json",
                 },
             },

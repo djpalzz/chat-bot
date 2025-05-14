@@ -1,9 +1,21 @@
 {
+  "name": "chat-bot",
+  "version": "1.0.0",
+  "description": "Simple chatbot using OpenRouter",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",          
+    "dev": "nodemon app.js"        
+  },
   "dependencies": {
     "axios": "^1.9.0",
     "dotenv": "^16.5.0",
-    "events": "^3.3.0",
-    "express": "^5.1.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.10"
-  }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

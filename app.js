@@ -28,8 +28,9 @@ app.post("/chat", async (req, res) => {
                     "HTTP-Referer": "http://localhost:3000",
                     "Content-Type": "application/json",
                 },
-            }
+            },
         );
+        
         if(response.status == 200){
             const  reply =  response.data.choices[0].message.content || response.data.choices[0].text || response.data.choices[0].generated_text;
             res.json({reply});
